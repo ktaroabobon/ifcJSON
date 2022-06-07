@@ -52,7 +52,7 @@ if __name__ == '__main__':
     # parser.add_argument('NO_GEOMETRY', action='store_true')
     args = parser.parse_args()
     if args.i:
-        ifcFilePath = args.i
+        ifc_file_path = args.i
     if args.compact:
         indent = None
         COMPACT = True
@@ -69,13 +69,13 @@ if __name__ == '__main__':
     else:
         GEOMETRY = True
 
-    if os.path.isfile(ifcFilePath):
+    if os.path.isfile(ifc_file_path):
         if args.o:
             jsonFilePath = args.o
         else:
-            jsonFilePath = os.path.splitext(ifcFilePath)[0] + '.json'
+            jsonFilePath = os.path.splitext(ifc_file_path)[0] + '.json'
         if not args.v or args.v == "4":
-            jsonData = ifcjson.IFC2JSON4(ifcFilePath,
+            jsonData = ifcjson.IFC2JSON4(ifc_file_path,
                                          COMPACT,
                                          NO_INVERSE=args.no_inverse,
                                          EMPTY_PROPERTIES=args.empty_properties,
@@ -85,12 +85,12 @@ if __name__ == '__main__':
             with open(jsonFilePath, 'w') as outfile:
                 json.dump(jsonData, outfile, indent=indent)
         elif args.v == "5a":
-            jsonData = ifcjson.IFC2JSON5a(ifcFilePath,
+            jsonData = ifcjson.IFC2JSON5a(ifc_file_path,
                                           COMPACT,
                                           EMPTY_PROPERTIES=args.empty_properties
                                           ).spf2Json()
             with open(jsonFilePath, 'w') as outfile:
-                json.dump(jsonData, outfile, indent=indent)
+                json.dump(jsonData, outfile, indent=indent, ensure_ascii=False)
         else:
             print('Version ' + args.v + ' is not supported')
     else:
