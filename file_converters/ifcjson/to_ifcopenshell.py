@@ -17,8 +17,9 @@ EXCLUDE_ATTRIBUTES = ['id', 'type', 'dimensions']
 
 class JSON2IFC(IFCJSON):
 
-    def __init__(self, inFilePath):
+    def __init__(self, inFilePath, json):
 
+        super().__init__(json)
         self.fileSchema = None
         self.schemaIdentifier = None
         self.timeString = None

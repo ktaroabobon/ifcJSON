@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  ifc2json:
+    container_name: ifc2json
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/code
+    ports:
+      - "8000:8000"
+    tty: true
