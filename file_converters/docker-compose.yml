@@ -1,12 +1,18 @@
 version: '3.8'
 services:
-  ifc2json:
-    container_name: ifc2json
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    volumes:
-      - ./:/code
-    ports:
-      - "8000:8000"
-    tty: true
+    ifcjson:
+        container_name: ifcjson
+        build:
+          context: .
+          dockerfile: ./Dockerfile
+        ports:
+            - "8000:8000"
+        tty: true
+        volumes:
+          - .:/code/
+          - ${PIP_CACHE_DIR_DETECTION:-cache-detection}:/root/.cache
+
+volumes:
+  cache-detection:
+
+
