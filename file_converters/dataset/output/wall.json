@@ -1,0 +1,131 @@
+{
+  "type": "IfcWall",
+  "globalId": "4466c04f-5d3f-40e8-bc12-cd0f1470d423",
+  "ownerHistory": {
+    "ref": "1113c3f3-e850-40d1-b9ec-b1317f2f3b9c"
+  },
+  "name": "標準壁:Core Wall_RC_180mm_Interior:184909",
+  "objectType": "標準壁:Core Wall_RC_180mm_Interior",
+  "objectPlacement": {
+    "type": "IfcLocalPlacement",
+    "placementRelTo": {
+      "type": "IfcLocalPlacement",
+      "placementRelTo": {
+        "type": "IfcLocalPlacement",
+        "placementRelTo": {
+          "type": "IfcLocalPlacement",
+          "relativePlacement": {
+            "type": "IfcAxis2Placement3D",
+            "location": {
+              "type": "IfcCartesianPoint",
+              "coordinates": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "relativePlacement": {
+          "type": "IfcAxis2Placement3D",
+          "location": {
+            "type": "IfcCartesianPoint",
+            "coordinates": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "relativePlacement": {
+        "type": "IfcAxis2Placement3D",
+        "location": {
+          "type": "IfcCartesianPoint",
+          "coordinates": [
+            0.0,
+            0.0,
+            120.0
+          ]
+        }
+      }
+    },
+    "relativePlacement": {
+      "type": "IfcAxis2Placement3D",
+      "location": {
+        "type": "IfcCartesianPoint",
+        "coordinates": [
+          -8927.5895431509,
+          6094.87791928549,
+          -270.0
+        ]
+      },
+      "axis": {
+        "type": "IfcDirection",
+        "directionRatios": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "refDirection": {
+        "type": "IfcDirection",
+        "directionRatios": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "representation": {
+    "type": "IfcProductDefinitionShape",
+    "representations": [
+      {
+        "ref": "b8107ce6-8cff-42c8-a962-0f7b0721afb7"
+      },
+      {
+        "ref": "0c87ac2a-0179-4b6f-885d-46671e57665a"
+      }
+    ]
+  },
+  "tag": "184909",
+  "predefinedType": "NOTDEFINED",
+  "hasAssociations": [
+    {
+      "ref": "1b3332be-c030-4775-8b65-49a77777ec5c"
+    }
+  ],
+  "isTypedBy": [
+    {
+      "ref": "f5ff4a98-e2e5-4c45-bc48-269260a8235b"
+    }
+  ],
+  "isDefinedBy": [
+    {
+      "ref": "67e44d26-7e74-4793-9f60-62d919f146da"
+    },
+    {
+      "ref": "95ec1299-1184-473f-a314-c3f15f6cec5a"
+    },
+    {
+      "ref": "c3828969-1994-4c6c-a9f8-1a342167a633"
+    },
+    {
+      "ref": "dc27dcdb-f63b-426c-9777-92773ee62b34"
+    }
+  ],
+  "connectedTo": [
+    {
+      "ref": "02f0684d-03ab-4841-a9f7-c6c04365675c"
+    },
+    {
+      "ref": "73d7f671-b94a-47e8-9b0a-a773ade9cde9"
+    }
+  ],
+  "containedInStructure": [
+    {
+      "ref": "b4894e4f-3b94-4499-9aab-f194e0b75b73"
+    }
+  ]
+}

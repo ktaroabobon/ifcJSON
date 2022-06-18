@@ -75,7 +75,7 @@ if __name__ == '__main__':
         else:
             jsonFilePath = os.path.splitext(ifc_file_path)[0] + '.json'
         if not args.v or args.v == "4":
-            jsonData = ifcjson.IFC2JSON4(ifc_file_path,
+            jsonData = ifcjs9on.IFC2JSON4(ifc_file_path,
                                          COMPACT,
                                          NO_INVERSE=args.no_inverse,
                                          EMPTY_PROPERTIES=args.empty_properties,
