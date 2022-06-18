@@ -75,7 +75,7 @@ if __name__ == '__main__':
         else:
             jsonFilePath = os.path.splitext(ifc_file_path)[0] + '.json'
         if not args.v or args.v == "4":
-            jsonData = ifcjs9on.IFC2JSON4(ifc_file_path,
+            jsonData = ifcjson.IFC2JSON4(ifc_file_path,
                                          COMPACT,
                                          NO_INVERSE=args.no_inverse,
                                          EMPTY_PROPERTIES=args.empty_properties,
@@ -96,4 +96,4 @@ if __name__ == '__main__':
     else:
         print(str(args.i) + ' is not a valid file')
 t1_stop = perf_counter()
-print("Conversion took ", t1_stop-t1_start, " seconds")
+print("Conversion took ", t1_stop - t1_start, " seconds")
